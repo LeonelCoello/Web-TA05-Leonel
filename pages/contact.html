@@ -1,66 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonel Admin | Contact</title>
-    
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <video autoplay muted loop id="video-background">
         <source src="../assets/videos/ciber.mp4" type="video/mp4">
     </video>
 
     <header>
-        <a href="../index.html" class="logo">LEONEL.ADMIN_</a>
+        <a href="../index.html" class="logo">
+            <img src="../assets/images/logo.png" alt="Logo" class="nav-logo">
+            LEONEL.ADMIN_
+        </a>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="p1.html">Security</a></li>
-                <li><a href="p2.html">Systems</a></li>
-                <li><a href="all-projects.html">All Projects</a></li>
-                <li><a href="contact.html" style="color:var(--accent-color)">Contact</a></li>
-                <li><a href="#" class="lang-btn">ES</a></li>
+                <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="p1.html" data-i18n="nav_p1">Security</a></li>
+                <li><a href="p2.html" data-i18n="nav_p2">Systems</a></li>
+                <li><a href="all-projects.html" data-i18n="nav_all">Projects</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact" style="color:var(--accent-color)">Contact</a></li>
+                <li><a href="#" id="lang-toggle" class="lang-btn">ES</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="glass-card" style="max-width: 600px;">
-            <h1>Establish Connection</h1>
-            <p style="margin-bottom: 30px;">Send an encrypted message to the admin.</p>
+            <h1 data-i18n="form_title">COMMUNICATION LINK</h1>
+            <p data-i18n="form_sub" style="margin-bottom: 30px;">ESTABLISH CONNECTION</p>
             
-            <form action="#" method="POST">
-                
+            <form id="contact-form">
                 <div class="form-group">
-                    <label for="name">USER ID (NAME)</label>
-                    <input type="text" id="name" name="name" placeholder="Enter Name..." required>
+                    <label for="name" data-i18n="label_name">USER ID (NAME)</label>
+                    <input type="text" id="name" placeholder="Enter Name..." required>
                 </div>
-
                 <div class="form-group">
-                    <label for="email">SOURCE IP (EMAIL)</label>
-                    <input type="email" id="email" name="email" placeholder="user@domain.com" required>
+                    <label for="email" data-i18n="label_email">SOURCE IP (EMAIL)</label>
+                    <input type="email" id="email" placeholder="user@domain.com" required>
                 </div>
-
                 <div class="form-group">
-                    <label for="message">PAYLOAD (MESSAGE)</label>
-                    <textarea id="message" name="message" placeholder="Enter data packet..." required></textarea>
+                    <label for="message" data-i18n="label_msg">PAYLOAD (MESSAGE)</label>
+                    <textarea id="message" placeholder="Enter data packet..." required></textarea>
                 </div>
-
                 <div class="actions" style="justify-content: center;">
-                    <button type="submit" class="btn-elegant" style="width: 100%; text-align: center;">Execute Send</button>
+                    <button type="submit" class="btn-elegant" style="width: 100%;" data-i18n="btn_send">SEND ME</button>
                 </div>
             </form>
 
+            <div class="actions" style="justify-content: center; margin-top: 20px;">
+                 <a href="../index.html" class="btn-elegant" style="font-size: 0.8rem; padding: 10px 20px;" data-i18n="btn_back">Go Back</a>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>© 2025 Secure Communication Channel.</p>
-    </footer>
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon">✔</div>
+            <h2 data-i18n="msg_success_title">SYSTEM STATUS</h2>
+            <p data-i18n="msg_success_body">Message Transmitted Successfully.<br>Thank you for contacting us.</p>
+            <button id="close-modal" class="btn-elegant">CLOSE</button>
+        </div>
+    </div>
 
+    <footer><p data-i18n="footer_text">System Online.</p></footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>

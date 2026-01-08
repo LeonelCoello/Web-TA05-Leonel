@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonel Admin | Security</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -11,35 +12,55 @@
         <source src="../assets/videos/ciber.mp4" type="video/mp4">
     </video>
 
-    <header class="main-header-component">
-        <a href="../index.html" class="logo">LEONEL.ADMIN_</a>
+    <header>
+        <a href="../index.html" class="logo">
+            <img src="../assets/images/ITBB.png" alt="Logo" class="nav-logo">
+            LEONEL.ADMIN_
+        </a>
         <nav>
             <ul>
-                <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
-                <li><a href="p1.html" data-i18n="nav_p1" style="color:var(--accent-color)">Seguridad</a></li>
-                <li><a href="p2.html" data-i18n="nav_p2">Sistemas</a></li>
-                <li><a href="all-projects.html" data-i18n="nav_all">Proyectos</a></li>
-                <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
-                <li><a href="#" id="lang-toggle" class="lang-btn">EN</a></li>
+                <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="p1.html" data-i18n="nav_p1" style="color:var(--accent-color)">Security</a></li>
+                <li><a href="p2.html" data-i18n="nav_p2">Systems</a></li>
+                <li><a href="all-projects.html" data-i18n="nav_all">Projects</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="#" id="lang-toggle" class="lang-btn">ES</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="glass-card">
-            <h1 data-i18n="p1_title">RED TEAM</h1>
-            <p data-i18n="p1_sub">PROYECTOS DESTACADOS DE SEGURIDAD</p>
-            <ul>
-                <li>Pentesting Web & Mobile</li>
-                <li>Auditoría de Infraestructura</li>
-            </ul>
-            <div class="actions">
-                <a href="../index.html" class="btn-elegant" data-i18n="btn_back">Volver</a>
+            <h1 data-i18n="p1_title">INCIDENTS MANAGEMENT</h1>
+            <p data-i18n="p1_sub">ADVANCED SECURITY OPERATIONS</p>
+            
+            <div style="text-align: left; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <span class="badge" style="background:var(--accent-color); color:black; padding:5px 10px; font-weight:bold; border-radius:4px;" data-i18n="p1_badge">FEATURED PROJECT</span>
+                
+                <h2 style="margin-top: 15px; color: white;" data-i18n="p1_project_title">AUTOMATED INCIDENT RESPONSE (SOAR)</h2>
+                
+                <p style="margin-bottom: 20px;" data-i18n="p1_desc">
+                    This project implements a full Security Orchestration, Automation, and Response (SOAR) architecture designed to drastically reduce mitigation time for critical threats.
+                </p>
+
+                <h3 style="color:var(--accent-color); font-size:1.1rem; margin-bottom:10px;" data-i18n="p1_arch_title">Technical Architecture:</h3>
+                <ul style="list-style: none; color: var(--text-dim); margin-bottom: 20px;">
+                    <li style="margin-bottom: 8px;" data-i18n="p1_list_1">🔹 Log Ingestion: Splunk Enterprise collecting syslogs from Palo Alto firewalls.</li>
+                    <li style="margin-bottom: 8px;" data-i18n="p1_list_2">🔹 Analysis: Python scripts (v3.9) running custom correlation rules.</li>
+                    <li style="margin-bottom: 8px;" data-i18n="p1_list_3">🔹 Auto-Response: AWS WAF API integration to block malicious IPs.</li>
+                </ul>
+
+                <h3 style="color:var(--accent-color); font-size:1.1rem; margin-bottom:10px;" data-i18n="p1_res_title">Result:</h3>
+                <p data-i18n="p1_res_desc">Reduced MTTD (Mean Time to Detect) by 60% and eliminated manual intervention.</p>
+            </div>
+
+            <div class="actions" style="margin-top: 40px;">
+                <a href="../index.html" class="btn-elegant" data-i18n="btn_back">Go Back</a>
             </div>
         </div>
     </main>
 
-    <footer><p data-i18n="footer_text">Sistema en línea.</p></footer>
+    <footer><p data-i18n="footer_text">System Online.</p></footer>
     <script src="../js/main.js"></script>
 </body>
 </html>

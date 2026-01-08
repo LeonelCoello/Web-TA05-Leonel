@@ -1,69 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonel Admin | Systems</title>
-    
     <link rel="stylesheet" href="../css/style.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <video autoplay muted loop id="video-background">
         <source src="../assets/videos/ciber.mp4" type="video/mp4">
     </video>
 
     <header>
-        <a href="../index.html" class="logo">LEONEL.ADMIN_</a>
+        <a href="../index.html" class="logo">
+            <img src="../assets/images/logo.png" alt="Logo" class="nav-logo">
+            LEONEL.ADMIN_
+        </a>
         <nav>
             <ul>
-                <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
-                <li><a href="p1.html" data-i18n="nav_p1">Seguridad</a></li>
-                <li><a href="p2.html" data-i18n="nav_p2" style="color:var(--accent-color)">Sistemas</a></li>
-                <li><a href="all-projects.html" data-i18n="nav_all">Proyectos</a></li>
-                <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
-                
-                <li><a href="#" id="lang-toggle" class="lang-btn">EN</a></li>
+                <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="p1.html" data-i18n="nav_p1">Security</a></li>
+                <li><a href="p2.html" data-i18n="nav_p2" style="color:var(--accent-color)">Systems</a></li>
+                <li><a href="all-projects.html" data-i18n="nav_all">Projects</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="#" id="lang-toggle" class="lang-btn">ES</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="glass-card">
-            <h1 data-i18n="p2_title">BLUE TEAM</h1>
-            <p data-i18n="p2_sub">PROYECTOS DESTACADOS DE SISTEMAS</p>
+            <h1 data-i18n="p2_title">BLUE TEAM & AI</h1>
+            <p data-i18n="p2_sub">INTELLIGENT SYSTEMS OPTIMIZATION</p>
             
-            <div style="text-align: left; margin-top: 30px;">
+            <div style="text-align: left; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <span class="badge" style="background:var(--accent-color); color:black; padding:5px 10px; font-weight:bold; border-radius:4px;" data-i18n="p2_badge">AI DEFENSE</span>
                 
-                <div style="margin-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px;">
-                    <h3 style="color: var(--accent-color); margin-bottom: 5px;">01. AWS Cloud Architecture</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-dim); line-height: 1.6;">
-                        Full deployment of a load-balanced web app using EC2, RDS, and S3. Automated via Terraform and CloudFormation.
-                    </p>
-                </div>
+                <h2 style="margin-top: 15px; color: white;" data-i18n="p2_project_title">PREDICTIVE THREAT MODEL (ML)</h2>
+                
+                <p style="margin-bottom: 20px;" data-i18n="p2_desc">
+                    Development and deployment of an unsupervised learning model capable of identifying network traffic anomalies that signature-based systems (traditional IDS) miss.
+                </p>
 
-                <div style="margin-bottom: 15px;">
-                    <h3 style="color: var(--accent-color); margin-bottom: 5px;">02. Active Directory Lab</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-dim); line-height: 1.6;">
-                        Virtual lab setup with Windows Server 2019. Configuration of GPOs, DNS, DHCP, and user permissions for 500+ users.
-                    </p>
-                </div>
+                <h3 style="color:var(--accent-color); font-size:1.1rem; margin-bottom:10px;" data-i18n="p2_stack_title">Tech Stack:</h3>
+                <ul style="list-style: none; color: var(--text-dim); margin-bottom: 20px;">
+                    <li style="margin-bottom: 8px;" data-i18n="p2_list_1">🔹 Framework: TensorFlow & Keras for neural networks.</li>
+                    <li style="margin-bottom: 8px;" data-i18n="p2_list_2">🔹 Algorithm: Isolation Forest and Autoencoders.</li>
+                    <li style="margin-bottom: 8px;" data-i18n="p2_list_3">🔹 Training: CIC-IDS2017 dataset processed with Pandas.</li>
+                    <li style="margin-bottom: 8px;" data-i18n="p2_list_4">🔹 Deployment: Docker container serving the model via REST API.</li>
+                </ul>
 
+                <h3 style="color:var(--accent-color); font-size:1.1rem; margin-bottom:10px;" data-i18n="p2_res_title">Impact:</h3>
+                <p data-i18n="p2_res_desc">Ability to detect Zero-Day attacks with 92% accuracy.</p>
             </div>
 
-            <div class="actions" style="margin-top: 30px;">
-                <a href="../index.html" class="btn-elegant" data-i18n="btn_back">Volver</a>
+            <div class="actions" style="margin-top: 40px;">
+                <a href="../index.html" class="btn-elegant" data-i18n="btn_back">Go Back</a>
             </div>
         </div>
     </main>
 
-    <footer>
-        <p data-i18n="footer_text">Sistema en línea. Disponible para contratación.</p>
-    </footer>
-
+    <footer><p data-i18n="footer_text">System Online.</p></footer>
     <script src="../js/main.js"></script>
-
 </body>
 </html>

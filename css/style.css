@@ -1,4 +1,4 @@
-/* css/style.css - VERSIÓN FINAL CLEAN */
+/* css/style.css - VERSIÓN FINAL CON MODAL */
 
 :root {
     --accent-color: #00e1ff;       /* Cian Eléctrico */
@@ -70,13 +70,32 @@ main {
 }
 
 h1 { color: var(--accent-color); font-size: 2.5rem; margin-bottom: 10px; }
+h2 { color: white; margin-bottom: 10px; font-size: 1.8rem; }
 p { color: var(--text-dim); line-height: 1.6; }
 
-/* --- PROYECTOS GRID (CLEAN VERSION) --- */
-.filter-container {
-    margin-bottom: 40px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;
+/* --- PROYECTOS DESTACADOS (HOME) --- */
+.featured-row {
+    display: flex; gap: 20px; width: 100%; margin-top: 30px;
+    flex-wrap: wrap; justify-content: center;
+}
+.featured-card {
+    flex: 1; min-width: 300px; 
+    background: rgba(0,0,0,0.5); border: 1px solid rgba(0, 225, 255, 0.3);
+    padding: 25px; border-radius: 8px; text-align: left; transition: 0.3s;
+    text-decoration: none; display: block; cursor: pointer;
+}
+.featured-card:hover { 
+    transform: translateY(-5px); box-shadow: 0 0 20px rgba(0, 225, 255, 0.2); 
+    border-color: var(--accent-color); background: rgba(0, 225, 255, 0.05);
+}
+.featured-card h3 { color: #fff; font-size: 1.3rem; margin-bottom: 5px; margin-top: 10px; }
+.featured-card .badge { 
+    color: #000; background: var(--accent-color); 
+    font-size: 0.7rem; font-weight: bold; padding: 2px 8px; border-radius: 4px;
 }
 
+/* --- PROYECTOS GRID (CLEAN) --- */
+.filter-container { margin-bottom: 40px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
 #search-input {
     background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px); transition: all 0.3s ease;
@@ -85,73 +104,36 @@ p { color: var(--text-dim); line-height: 1.6; }
     border-color: var(--accent-color); background: rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 15px rgba(0, 225, 255, 0.1);
 }
-
 .projects-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px; width: 100%; max-width: 1200px;
 }
-
-/* TARJETA CLEAN */
 .mini-card {
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.05);
     padding: 30px; border-radius: 12px; text-align: left;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    display: flex; flex-direction: column; justify-content: space-between;
+    transition: all 0.4s; display: flex; flex-direction: column; justify-content: space-between;
     min-height: 200px; position: relative; overflow: hidden;
 }
-
-.mini-card::before {
-    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px;
-    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
-    transform: scaleX(0); transition: 0.4s;
-}
-
-.mini-card:hover {
-    transform: translateY(-5px); background: rgba(15, 23, 42, 0.9);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-.mini-card:hover::before { transform: scaleX(1); }
-
+.mini-card:hover { transform: translateY(-5px); background: rgba(15, 23, 42, 0.9); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); }
 .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
 .card-id { font-size: 0.75rem; color: rgba(255, 255, 255, 0.3); font-family: monospace; }
 .tech-badge {
     font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 20px;
     background: rgba(0, 225, 255, 0.05); color: var(--accent-color); letter-spacing: 1px;
-    border: 1px solid rgba(0, 225, 255, 0.2);
 }
+.mini-card h3 { color: #fff; font-size: 1.1rem; font-weight: 600; margin-bottom: 10px; }
+.mini-card p { color: var(--text-dim); font-size: 0.85rem; }
 
-.mini-card h3 { color: #fff; font-size: 1.1rem; font-weight: 600; margin-bottom: 10px; line-height: 1.4; }
-.mini-card p { color: var(--text-dim); font-size: 0.85rem; line-height: 1.6; margin: 0; }
-
-/* --- PAGINACIÓN --- */
+/* PAGINACIÓN */
 .pagination { margin-top: 50px; display: flex; justify-content: center; gap: 10px; }
 .page-btn {
     background: transparent; border: 1px solid rgba(255,255,255,0.2);
     color: white; width: 40px; height: 40px; border-radius: 50%;
     cursor: pointer; transition: 0.3s;
 }
-.page-btn:hover, .page-btn.active {
-    background: var(--accent-color); color: black; border-color: var(--accent-color);
-}
+.page-btn:hover, .page-btn.active { background: var(--accent-color); color: black; border-color: var(--accent-color); }
 
-/* --- ELEMENTOS HOME Y GENERAL --- */
-.featured-row {
-    display: flex; gap: 20px; width: 100%; margin-top: 30px;
-    flex-wrap: wrap; justify-content: center;
-}
-.featured-card {
-    flex: 1; min-width: 300px; background: rgba(0,0,0,0.5);
-    border: 1px solid rgba(0, 225, 255, 0.3); padding: 25px; border-radius: 8px;
-    text-align: left; transition: 0.3s;
-}
-.featured-card:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(0, 225, 255, 0.2); border-color: var(--accent-color); }
-.featured-card h3 { color: #fff; font-size: 1.3rem; margin-bottom: 5px; }
-.featured-card .badge { 
-    color: #000; background: var(--accent-color); 
-    font-size: 0.7rem; font-weight: bold; padding: 2px 8px; border-radius: 4px;
-}
-
+/* BOTONES Y FORM */
 .actions { display: flex; gap: 20px; justify-content: center; margin-top: 30px; flex-wrap: wrap; }
 .btn-elegant {
     text-decoration: none; color: white; padding: 12px 30px;
@@ -159,7 +141,6 @@ p { color: var(--text-dim); line-height: 1.6; }
     transition: 0.3s; text-transform: uppercase; font-size: 0.85rem; cursor: pointer; background: transparent;
 }
 .btn-elegant:hover { border-color: var(--accent-color); background: rgba(0,225,255,0.1); }
-
 .form-group { margin-bottom: 20px; text-align: left; width: 100%; }
 label { display: block; margin-bottom: 8px; color: var(--accent-color); }
 input, textarea {
@@ -167,3 +148,21 @@ input, textarea {
     border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 5px;
 }
 footer { text-align: center; padding: 20px; color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+
+/* --- MODAL DE ÉXITO (NUEVO) --- */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85); display: flex; justify-content: center; align-items: center;
+    z-index: 2000; opacity: 0; visibility: hidden; transition: all 0.4s ease; backdrop-filter: blur(5px);
+}
+.modal-overlay.active { opacity: 1; visibility: visible; }
+.modal-content {
+    background: rgba(12, 20, 35, 0.95); border: 1px solid var(--accent-color);
+    padding: 40px; border-radius: 15px; text-align: center;
+    box-shadow: 0 0 30px rgba(0, 225, 255, 0.2); transform: scale(0.8);
+    transition: all 0.3s ease; max-width: 400px; width: 90%;
+}
+.modal-overlay.active .modal-content { transform: scale(1); }
+.modal-icon { font-size: 3rem; color: var(--accent-color); margin-bottom: 20px; text-shadow: 0 0 15px var(--accent-color); }
+.modal-content h2 { color: white; font-size: 1.5rem; margin-bottom: 10px; letter-spacing: 2px; }
+.modal-content p { color: var(--text-dim); margin-bottom: 25px; font-size: 1rem; }
