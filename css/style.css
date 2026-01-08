@@ -166,3 +166,82 @@ footer { text-align: center; padding: 20px; color: rgba(255,255,255,0.4); font-s
 .modal-icon { font-size: 3rem; color: var(--accent-color); margin-bottom: 20px; text-shadow: 0 0 15px var(--accent-color); }
 .modal-content h2 { color: white; font-size: 1.5rem; margin-bottom: 10px; letter-spacing: 2px; }
 .modal-content p { color: var(--text-dim); margin-bottom: 25px; font-size: 1rem; }
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. Header y Menú Vertical */
+    header {
+        position: relative; /* Deja de ser fijo para no tapar pantalla en móviles pequeños */
+        flex-direction: column; /* Logo arriba, menú abajo */
+        padding: 15px;
+        background: var(--bg-backup); /* Fondo sólido para leer mejor */
+    }
+
+    .logo {
+        margin-bottom: 15px;
+        width: 100%;
+        justify-content: center;
+        border-bottom: none; /* Quitamos la línea en móvil si molesta */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú en lista vertical */
+        gap: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 1.1rem; /* Texto más grande para tocar con el dedo */
+        background: rgba(255,255,255,0.05); /* Fondo suave en cada botón */
+        border-radius: 8px;
+    }
+
+    /* 2. Ajuste del cuerpo principal */
+    main {
+        padding-top: 20px; /* Menos espacio arriba porque el header ya no es fijo */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* 3. Tarjeta de Cristal y Títulos */
+    .glass-card {
+        padding: 2rem 1.5rem; /* Menos relleno interno */
+        margin-bottom: 20px;
+    }
+
+    h1 { font-size: 1.8rem; } /* Título más pequeño */
+    h2 { font-size: 1.4rem; }
+
+    /* 4. Tarjetas Destacadas */
+    .featured-row {
+        flex-direction: column; /* Una debajo de otra */
+    }
+
+    .featured-card {
+        width: 100%; /* Ocupar todo el ancho */
+    }
+
+    /* 5. Grid de Proyectos */
+    .projects-grid {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    /* 6. Formulario y Botones */
+    .actions {
+        flex-direction: column;
+    }
+
+    .btn-elegant, button, input, textarea {
+        width: 100%; /* Botones anchos fáciles de tocar */
+        max-width: 100%;
+    }
+    
+    /* 7. Modal Ajustado */
+    .modal-content {
+        width: 85%;
+        padding: 30px 20px;
+    }
+}
