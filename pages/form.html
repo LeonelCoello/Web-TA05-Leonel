@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonel Admin | Contact</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <video autoplay muted loop id="video-background">
+        <source src="../assets/videos/ciber.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <a href="../index.html" class="logo">LEONEL.ADMIN_</a>
+        <nav>
+            <ul>
+                <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="p1.html" data-i18n="nav_p1">Seguridad</a></li>
+                <li><a href="p2.html" data-i18n="nav_p2">Sistemas</a></li>
+                <li><a href="all-projects.html" data-i18n="nav_all">Proyectos</a></li>
+                
+                <li><a href="form.html" data-i18n="nav_contact" style="color:var(--accent-color)">Contacto</a></li>
+                
+                <li><a href="#" id="lang-toggle" class="lang-btn">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="glass-card" style="max-width: 600px;">
+            <h1 data-i18n="form_title">ENLACE DE COMUNICACIÓN</h1>
+            <p data-i18n="form_sub" style="margin-bottom: 20px;">ESTABLECER CONEXIÓN</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name" data-i18n="label_name">ID DE USUARIO</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" data-i18n="label_email">IP ORIGEN (EMAIL)</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" data-i18n="label_msg">MENSAJE</label>
+                    <textarea id="message" required></textarea>
+                </div>
+
+                <div class="actions" style="justify-content: center;">
+                    <button type="submit" class="btn-elegant" style="width: 100%;" data-i18n="btn_send">ENVIAR</button>
+                </div>
+            </form>
+
+            <div class="actions" style="justify-content: center; margin-top: 20px;">
+                 <a href="../index.html" class="btn-elegant" style="font-size: 0.8rem; padding: 10px 20px;" data-i18n="btn_back">Volver</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p data-i18n="footer_text">Sistema en línea.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

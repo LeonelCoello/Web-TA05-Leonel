@@ -1,0 +1,88 @@
+/* css/all-projects.css */
+
+/* CONTENEDOR DE FILTROS */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    z-index: 10;
+}
+
+/* BOTONES DE FILTRO */
+.filter-btn {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--text-dim);
+    color: var(--text-dim);
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: rgba(0, 225, 255, 0.1);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(0, 225, 255, 0.3);
+}
+
+/* REJILLA DE PROYECTOS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adaptable */
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 40px;
+}
+
+/* TARJETAS INDIVIDUALES (Mini Cards) */
+.mini-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 3px solid var(--accent-color); /* Detalle neón arriba */
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.mini-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 225, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.mini-card h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 15px 0 10px 0;
+    font-weight: 600;
+}
+
+.mini-card p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ETIQUETAS DE TECNOLOGÍA (Python, Java, etc.) */
+.tech-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    background: rgba(0, 225, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 225, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

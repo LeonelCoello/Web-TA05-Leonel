@@ -1,0 +1,23 @@
+.page-title { text-align: center; margin: 30px 0; }
+.page-title h1 { color: white; }
+
+.main-form-container {
+    background-color: #0a0a0a; border: 1px solid #333; border-radius: 20px; 
+    max-width: 800px; margin: 0 auto 40px auto; padding: 60px 20px; display: flex; justify-content: center;
+}
+.form-content-box { width: 100%; max-width: 400px; text-align: center; }
+.form-content-box h2 { color: #00ff41; margin-bottom: 10px; }
+.form-content-box p { color: #666; margin-bottom: 30px; font-size: 0.9rem; }
+
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+.input-group { text-align: left; }
+.input-group label { display: block; color: #00ff41; margin-bottom: 5px; font-size: 0.8rem; }
+.contact-form input, .contact-form textarea {
+    width: 100%; padding: 15px; border: 1px solid #333; background-color: black; 
+    color: #00ff41; font-family: 'Courier New', monospace;
+}
+.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: #00ff41; }
+.btn-submit {
+    padding: 15px; background: #00ff41; color: black; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; margin-top: 10px;
+}
+.btn-submit:hover { background: white; }

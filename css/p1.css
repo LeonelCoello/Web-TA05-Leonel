@@ -1,0 +1,31 @@
+/* File: css/p1.css */
+.project-header-center { text-align: center; margin: 40px 0; }
+.project-header-center h1 { font-size: 2.5rem; letter-spacing: 5px; color: white; }
+.project-header-center .subtitle { 
+    color: #ff3333; /* RED */
+    font-weight: bold; margin-top: 10px; 
+}
+
+.three-column-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 20px;
+}
+
+.column-content {
+    border: 1px solid #550000; /* Dark Red Border */
+    height: 500px; position: relative; overflow: hidden;
+    background-color: #0a0000;
+}
+
+.column-content:hover {
+    border-color: #ff0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.js-rotating-img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: grayscale(100%) contrast(120%); /* Security Camera look */
+    transition: 0.5s;
+}
+.column-content:hover .js-rotating-img { filter: grayscale(0%); }

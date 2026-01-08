@@ -1,0 +1,60 @@
+/* --- css/p2.css --- */
+/* Estilos específicos para la página de Sistemas (Blue Team) */
+
+/* Contenedor de la lista */
+.systems-list {
+    text-align: left;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* Cada proyecto individual */
+.system-item {
+    padding: 25px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.2); /* Fondo ligeramente más oscuro */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 3px solid transparent; /* Preparado para el hover */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por encima del proyecto */
+.system-item:hover {
+    transform: translateX(10px); /* Se mueve un poco a la derecha */
+    border-left-color: var(--accent-color); /* Aparece borde cian a la izquierda */
+    background: rgba(0, 225, 255, 0.05); /* Brillo sutil de fondo */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Título del proyecto (01. AWS...) */
+.system-item h3 {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Descripción del proyecto */
+.system-item p {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Enlace pequeño de "View Diagram" (Opcional) */
+.view-link {
+    font-size: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent-color);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.view-link:hover {
+    opacity: 1;
+    color: var(--accent-color);
+}

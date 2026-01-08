@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonel Admin | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="assets/videos/ciber.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="Logo" class="nav-logo">
+            LEONEL.ADMIN_
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="pages/p1.html" data-i18n="nav_p1">Seguridad</a></li>
+                <li><a href="pages/p2.html" data-i18n="nav_p2">Sistemas</a></li>
+                <li><a href="pages/all-projects.html" data-i18n="nav_all">Proyectos</a></li>
+                <li><a href="pages/contact.html" data-i18n="nav_contact">Contacto</a></li>
+                <li><a href="#" id="lang-toggle" class="lang-btn">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="glass-card">
+            <h1 data-i18n="home_title">SYSADMIN & CIBERSEGURIDAD</h1>
+            <p data-i18n="home_subtitle">Protegiendo infraestructuras y optimizando el rendimiento.</p>
+            
+            <div class="featured-row">
+                <div class="featured-card">
+                    <span class="badge">FEATURED</span>
+                    <h3 style="margin-top:10px;">INCIDENT MANAGEMENT</h3>
+                    <p style="font-size: 0.9rem;">
+                        Automated SOAR pipeline using Splunk and Python. Reduces response time to critical CVEs by 40% using real-time packet analysis.
+                    </p>
+                </div>
+                <div class="featured-card">
+                    <span class="badge">AI DEFENSE</span>
+                    <h3 style="margin-top:10px;">MACHINE LEARNING SECURITY</h3>
+                    <p style="font-size: 0.9rem;">
+                        Predictive anomaly detection model trained on TensorFlow. Identifies zero-day threats and lateral movement in internal networks.
+                    </p>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a href="pages/p1.html" class="btn-elegant" data-i18n="btn_p1">Ver Seguridad</a>
+                <a href="pages/p2.html" class="btn-elegant" data-i18n="btn_p2">Ver Sistemas</a>
+            </div>
+        </div>
+    </main>
+
+    <footer><p data-i18n="footer_text">Sistema en línea.</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

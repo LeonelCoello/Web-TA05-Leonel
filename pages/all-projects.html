@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Leonel Admin | Database</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="../assets/videos/ciber.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <a href="../index.html" class="logo">
+            <img src="../assets/images/logo.png" alt="Logo" class="nav-logo">
+            LEONEL.ADMIN_
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="p1.html" data-i18n="nav_p1">Seguridad</a></li>
+                <li><a href="p2.html" data-i18n="nav_p2">Sistemas</a></li>
+                <li><a href="all-projects.html" data-i18n="nav_all" style="color:var(--accent-color)">Proyectos</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
+                <li><a href="#" id="lang-toggle" class="lang-btn">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h1 data-i18n="all_title" style="letter-spacing: 3px;">BASE DE DATOS</h1>
+            <p data-i18n="all_sub" style="opacity: 0.8;">System Repository</p>
+        </div>
+
+        <div class="filter-container">
+            <input type="text" id="search-input" placeholder="Search..." 
+                   style="padding: 12px 25px; border-radius: 50px; color: white; width: 350px; outline: none;">
+            
+            <button class="filter-btn btn-elegant" data-filter="all" style="font-size:0.75rem;">ALL</button>
+            <button class="filter-btn btn-elegant" data-filter="python" style="font-size:0.75rem;">PYTHON</button>
+            <button class="filter-btn btn-elegant" data-filter="bash" style="font-size:0.75rem;">BASH</button>
+        </div>
+
+        <div id="project-grid-container" class="projects-grid">
+            </div>
+
+        <div id="pagination-container" class="pagination"></div>
+
+        <div class="actions" style="margin-top: 50px;">
+            <a href="../index.html" class="btn-elegant" data-i18n="btn_back">Volver</a>
+        </div>
+    </main>
+
+    <footer><p data-i18n="footer_text">Sistema en línea.</p></footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
