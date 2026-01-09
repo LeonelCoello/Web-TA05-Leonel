@@ -4,7 +4,7 @@ const translations = {
     'es': {
         // NAV & FOOTER
         'nav_home': 'Inicio', 'nav_p1': 'Seguridad', 'nav_p2': 'Sistemas', 'nav_all': 'Proyectos', 'nav_contact': 'Contacto',
-        'footer_text': 'Sistema en línea. Disponible para contratación.', 'btn_back': 'Volver',
+        'footer_text': 'CONTACTO: anuard.coello.7e9@itb.cat', 'btn_back': 'Volver',
         
         // HOME
         'home_title': 'SYSADMIN & CIBERSEGURIDAD', 'home_subtitle': 'Protegiendo infraestructuras y optimizando el rendimiento.',
@@ -30,7 +30,7 @@ const translations = {
     'en': {
         // NAV & FOOTER
         'nav_home': 'Home', 'nav_p1': 'Security', 'nav_p2': 'Systems', 'nav_all': 'Projects', 'nav_contact': 'Contact',
-        'footer_text': 'System Online. Available for hire.', 'btn_back': 'Go Back',
+        'footer_text': 'CONTACT: anuard.coello.7e9@itb.cat', 'btn_back': 'Go Back',
 
         // HOME
         'home_title': 'SYSADMIN & CYBERSECURITY', 'home_subtitle': 'Securing critical infrastructure and optimizing performance.',
