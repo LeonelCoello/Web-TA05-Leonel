@@ -58,7 +58,7 @@ header {
 }
 
 .nav-logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 nav ul { list-style: none; display: flex; align-items: center; gap: 25px; margin: 0; padding: 0; }
