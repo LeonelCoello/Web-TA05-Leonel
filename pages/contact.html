@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonel Admin | Contact</title>
+    
     <link rel="stylesheet" href="../css/style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +17,6 @@
     <header>
         <a href="../index.html" class="logo">
             <img src="../assets/images/logo.png" alt="Logo" class="nav-logo">
-            
         </a>
         <nav>
             <ul>
@@ -29,7 +31,7 @@
     </header>
 
     <main>
-        <div class="glass-card" style="max-width: 600px;">
+        <div class="glass-card contact-card-responsive">
             <h1 data-i18n="form_title">COMMUNICATION LINK</h1>
             <p data-i18n="form_sub" style="margin-bottom: 30px;">ESTABLISH CONNECTION</p>
             
@@ -62,7 +64,8 @@
             <div class="modal-icon">✔</div>
             <h2 data-i18n="msg_success_title">SYSTEM STATUS</h2>
             <p data-i18n="msg_success_body">Message Transmitted Successfully.<br>Thank you for contacting us.</p>
-            <button id="close-modal" class="btn-elegant">CLOSE</button>
+            
+            <button id="close-modal" class="btn-elegant" onclick="window.location.href='../index.html'">CLOSE</button>
         </div>
     </div>
 
