@@ -95,13 +95,3 @@ Web-TA05-Leonel/
 ├── index.html           # Landing Page / Dashboard principal
 ├── README.md            # Documentación del proyecto
 └── .gitignore           # Archivos excluidos del control de versiones
-
-### ¿Qué hace a este README más "Pro"?
-
-1.  **Badges de Shields.io:** Esas pequeñas "pegatinas" al principio (Status, Build, Focus) son estándar en la industria y dan una imagen muy cuidada.
-2.  **Tabla de Contenidos:** Facilita la navegación si el documento es largo.
-3.  **Lenguaje Técnico:** Usamos términos como *Hardening*, *Zero-Day*, *Pipeline*, *Deploy*, *CI/CD*. Esto demuestra que sabes de lo que hablas más allá del código HTML.
-4.  **Tabla de Proyectos:** Presentar los proyectos en una tabla lo hace mucho más legible y ejecutivo para un reclutador.
-5.  **Sección de "Stack Tecnológico":** Diferencia entre lo que usaste para *hacer* la web y lo que *sabes hacer* profesionalmente (Python, Splunk, etc.).
-
-¡Espero que este diseño encaje con la imagen profesional que quieres proyectar!
